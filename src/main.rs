@@ -150,7 +150,7 @@ fn main() {
     println!("{}", hcdiff_with_preceding);
 
     // let vcf_path = "data/DNA-003114B_haplotypecaller.vcf.gz";
-    let vcf_path = &args[2];
+    let vcf_path = &args[3];
     let mut in_vcf = rust_htslib::bcf::Reader::from_path(vcf_path).expect("Could not VCF");
     let header_view = in_vcf.header().clone();
 

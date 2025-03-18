@@ -243,7 +243,11 @@ fn main() {
 
             let line = format!(
                 "{}\t{}\t.\t{}\t{}\t.\t.\tDENOVO={}\n",
-                chr, position, reference, alt, denovo
+                chr,
+                position + 1,
+                reference,
+                alt,
+                denovo
             );
 
             let _ = file.write(line.as_bytes());
